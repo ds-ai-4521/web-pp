@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./scroll.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -11,6 +12,10 @@
     <title>Marina Abramović</title>
 </head>
 <body>
+    <!--cursor-->
+    
+    <div class="cursor rounded"></div>
+    <div class="cursor pointed"><div>
     <!--navigacija-->
     <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
         
@@ -58,6 +63,8 @@
         
     </nav>
 
+    <!--scroll bar-->
+    <div class="progress-barr" id="progressBar"></div>
     <!--sadrzaj-->
     <div style="background-color: rgb(18, 20, 22);">
         <div><br></br></div>
@@ -97,7 +104,122 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
+        </div>
+        
+        <div  style="background-color: rgb(18, 20, 22); margin-bottom: 0;">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="jumbotron text-center text-white" style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px;">
+            <h1><b>Rhythm 0 </b></h1>
+            <p>1974.</p>
+        </div>
+        <div class="container text-center text-white " style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px; width: 50%;">
+            <div></div>
+            <div><p>The life threatening performance of Rhythm 0 featured Marina
+                Abramovic, completely vulnerable to the will of her audience for 
+                six hours. The participators were given an array (seventy-two) of 
+                items to utilize and do with as they please without any 
+                repercussions, such objects ranged from a polaroid camera to a
+                gun and a single bullet. Displaying the horrendous actions people
+                were willing to inflict upon another just because they have been
+                given the permission her constant focus on pushing the body’s 
+                physical and emotional limits continues in this piece. People
+                pricked her with rose thorns, removed her clothing, whipped 
+                her and dried her involuntary tears with tissues. 
+                One went as far as loading the gun with the bullet and 
+                placing it to the side of her head, manipulating her fingers
+                against the trigger to see if she would respond.  By the end 
+                of the performance she had been stripped naked and bleeding,
+                with miscellaneous fragments littered over her body. At the 
+                exact six hour mark, unbeknownst to them, she began to walk 
+                towards the audience, which had increased exponentially since
+                the beginning of the performance. Desperate to escape 
+                confrontation, nearly every spectator, whether they had 
+                interacted with Abramović or not, fled immediately from 
+                the space.</p></div>
+            <div></div>
+            <div><p>Through this piece, the artist was able to subconsciously 
+                expose the true human nature of the audience. The artist 
+                established an anonymous atmosphere where people could freely
+                act upon instinct with no fear of reciprocation, giving them 
+                a false sense of security. Then, the second she broke the illusion
+                of their anonymity, reintroducing the fact that she was conscious
+                of their actions, reality sets in and fear replaces freedom.  
+                Because without fear of judgement, of reciprocation or 
+                consequence, human nature degenerates to a point of volatility.</p></div>
+            <br>
+            <img src="./r4.jpg" class="mx-auto d-block" alt="Slika1" width="440px">
+            <br>
+            <div><p>It began tamely. Someone turned her around. Someone thrust
+                her arms into the air. Someone touched her somewhat intimately.
+                The Neapolitan night began to heat up. In the third hour all her
+                clothes were cut from her with razor blades. In the fourth hour
+                the same blades began to explore her skin. Her throat was slashed 
+                so someone could suck her blood. Various minor sexual assaults 
+                were carried out on her body. She was so committed to the piece 
+                that she would not have resisted rape or murder. Faced with her 
+                abdication of will, with its implied collapse of human psychology, 
+                a protective group began to define itself in the audience. When a 
+                loaded gun was thrust to Marina's head and her own finger was 
+                being worked around the trigger, a fight broke out between the 
+                audience factions."</p>
             </div>
+            <br>
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal"> 
+        Quote
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: rgb(18, 20, 22)">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title"><i>Marina Abramovic said...</i></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+
+                <div class="modal-body" >
+
+                    <p><i>"I don't think anyone does anything from happiness. Happiness is such a good state, it doesn't need to be creative.
+                         You're not creative from happiness, you're just happy. You're creative when you're miserable and depressed. 
+                         You find the key to transform things. Happiness does not need to transform."
+                        </i></p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><br></br></div>
+            <br>
+            <img src="./r5.jpg" class="mx-auto d-block" alt="Slika1" width="440px">
+            <br>
+            
+            <div><br>When the gallery announced the work was over, and Abramović 
+                began to move again, she said the audience left, unable to face 
+                her as a person.
+                Rhythm 0 ranked ninth on a Complex list of the greatest works of 
+                performance art ever done.</br></div>
+            <div><br></br></div>
+            <img src="./r7.png" class="mx-auto d-block" alt="Slika7" width="240px">
+            <div><br></br></div>
+            <div><br>As Abramović described it later: <i>“What I learned was that
+                ... if you leave it up to the audience, they can kill you.” ... 
+                “I felt really violated: they cut up my clothes, stuck rose thorns 
+                in my stomach, one person aimed the gun at my head, and another 
+                took it away. It created an aggressive atmosphere. After exactly 
+                6 hours, as planned, I stood up and started walking toward the 
+                audience. Everyone ran away, to escape an actual confrontation.”</i></br></div>
+            <div><br></br></div>
+            <div><br></br></div>
           
 
 
@@ -108,5 +230,6 @@
     <div class=" text-center text-white" style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
         <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 39/2021 Uroš Perić</p>
     </div>
+
 </body>
 </html>
