@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./scroll.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Marina Abramović</title>
 </head>
+
 <body>
     <!--navigacija-->
     <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
-        
+
         <br>
         <a href="./index.html"><img src="./eyelogo.png" class="float-left" alt="Slika2" width="10px"></a>
         <br><!--logo-->
@@ -21,43 +24,44 @@
         <!--secondary logo-tema sajta -->
         <a class="navbar-brand col-md-9" href="/index.html"><b>Marina Abramović</b></a>
 
-  
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <!--collapse navbar-collapse obezbeđuje dugme pod kojim se na klik prikazuje meni sa sadrzajem-->
         <div class="collapse navbar-collapse" id="Test">
             <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
             <button class="dropbtn navbar"><a href="./index.html" class="active">Home</a></button>
             <div class="dropdown" id="Test">
-                <button class="dropbtn navbar-nav" >First</button>
+                <button class="dropbtn navbar-nav">First</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
-                  <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
-                  <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
+                    <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
+                    <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
+                    <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
                 </div>
             </div>
             <div class="dropdown" id="Test">
                 <button class="dropbtn navbar">Second</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
-                  <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
-                  <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
+                    <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
+                    <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
+                    <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
                 </div>
             </div>
             <div class="dropdown" id="Test">
                 <button class="dropbtn navbar-nav">Third</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
-                  <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
-                  <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
+                    <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
+                    <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
+                    <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
                 </div>
             </div>
         </div>
-        
-    </nav>
 
+    </nav>
+    <!--scroll bar-->
+    <div class="progress-barr" id="progressBar"></div>
     <!--sadrzaj-->
     <div style="background-color: rgb(18, 20, 22);">
 
@@ -65,10 +69,171 @@
 
         <div><br></br></div>
         <div><br></br></div>
-    </div>
-    <!--Podnozje-->
-    <div class=" text-center text-white" style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
-        <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 35/2021 Uroš Perić</p>
-    </div>
+        <!--Hover galerija-->
+
+        <div style="background-color: rgb(18, 20, 22); margin-bottom: 0px;">
+            <div>
+
+                <div class="d-flex flex-row">
+                    <div class="card mx-auto" style="width:400px">
+                        <img class="card-img-top" src="./art1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">I</h4>
+                            <p class="card-text">"In The Artist is Present, I perform every day for three months. The
+                                performance is really about presence. You have to be in the here and now, 100 percent."
+                            </p>
+                            <a target="_blank" href="./art1.jpg" class="btn btn-primary"
+                                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+                        </div>
+                    </div>
+                    <div class="card mx-auto" style="width:400px">
+                        <img class="card-img-top" src="./art2.webp" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">II</h4>
+                            <p class="card-text">"I have the empty chair, so everybody from the audience can come on his
+                                free time and sit in the front of me, and engage in this kind of silence, experience of
+                                the here and now, the present moment."</p>
+
+                            <p>So you can observe this as a kind of stage for experience. Or you can really enter that
+                                space and take active participation, which actually bring you much closer to the artist,
+                                and this presence, and to your own experience."</p>
+                            <a target="_blank" href="./art2.webp" class="btn btn-primary"
+                                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+                        </div>
+                    </div>
+                    <div class="card mx-auto" style="width:400px">
+                        <img class="card-img-top" src="./art3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">III</h4>
+                            <p class="card-text">"If you sit on this chair opposite of me, it's extremely important to
+                                actually find a very comfortable position and you don't move. Just sit motionless, and
+                                see what happen if we connect with our eyes. And I really think that it’s going to be
+                                something quite special to go into this unknown territory."</p>
+                            <p>"Because the energy coming from the audience I have to be transmitter and receiver in the
+                                same time; that energy just goes through me. And to be ready for the next visitor and
+                                the next one and the next one."</p>
+                            <a target="_blank" href="./art3.jpg" class="btn btn-primary"
+                                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center text-white"
+            style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 10px;">
+
+            <h1><b>The Artist is Present</b></h1>
+            <p>2010.</p>
+        </div>
+        <div class="container text-center text-white "
+            style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px; width: 50%;">
+            <div></div>
+            <div>
+                <p>"The Artist is Present" is a notable performance art piece by Marina Abramović, and it was also the
+                    title of a documentary that captures the artist's retrospective at the Museum of Modern Art (MoMA)
+                    in New York in 2010.</p>
+            </div>
+            <div></div>
+            <br>
+            <img src="./art8.jpg" class="mx-auto d-block" alt="Slika art8" width="440px">
+            <br>
+            <div>
+                <p>In aformentioned art piece, Marina Abramović sat in the museum's atrium for a total of 736 hours over
+                    the course of three months. Visitors to the museum were invited to sit across from her at a table
+                    and share a silent gaze. The performance was a powerful exploration of the connection between the
+                    artist and the audience, as well as an endurance test for Abramović herself.
+                </p>
+            </div>
+            <br>
+            <div></div>
+            <div>
+                <p>The focal point of the performance was a simple wooden table and two chairs placed in the museum's
+                    atrium. Marina Abramović sat at the table, and visitors were invited to take turns sitting across
+                    from her.
+                </p>
+            </div>
+            <br>
+            <img src="./art5.jpg" class="mx-auto d-block" alt="Slika art5" width="440px">
+            <br>
+            <div></div>
+            <div>
+                <p>The essence of "The Artist is Present" was the silent exchange that occurred between Abramović and
+                    each participant. The artist and the participant would share eye contact and sit in silence for an
+                    undetermined amount of time.
+                </p>
+            </div>
+            <br>
+            <img src="./art6.jpg" class="mx-auto d-block" alt="Slika art6" width="440px">
+            <br>
+            <div></div>
+            <div>
+                <p>The performance had a significant impact on Marina Abramović as well. It required immense
+                    concentration and endurance, and the artist described the experience as both physically and
+                    emotionally demanding.
+                </p>
+            </div>
+            <br>
+            <div>
+                <p>The documentary was directed by Matthew Akers and Jeff Dupre. It provides an in-depth look at
+                    Abramović's life and career leading up to and during her retrospective at MoMA. The film covers
+                    various aspects of her work, including her earlier performances, and explores the impact of "The
+                    Artist is Present" on both Abramović and the public.</p>
+            </div>
+            <br>
+            <div><br>The film delves into Abramović's personal history, her early life in Yugoslavia, and her evolution
+                as a groundbreaking performance artist. It explores the motivations behind her work, her influences, and
+                the challenges she faced as a pioneering figure in the art world.</br></div>
+            <br>
+            <div>
+                <p>"The Artist Is Present" also provides a glimpse into Marina Abramović's collaborations with fellow
+                    artists, including her former partner Ulay (Uwe Laysiepen). The film explores the impact of their
+                    artistic and personal relationship on Abramović's work and her approach to performance art.</p>
+            </div>
+            <br>
+            <img src="./art7.jpg" class="mx-auto d-block" alt="Slika art7" width="440px">
+            <br>
+            <div>
+                <p>One of the documentary's strengths is its ability to capture the emotional experiences of the
+                    participants who sat across from Abramović during the "The Artist is Present" performance. Viewers
+                    get to witness the profound and sometimes tearful interactions between Abramović and the individuals
+                    who took part in the silent exchange.</p>
+            </div>
+            <br>
+            <img src="./art9.jpg" class="mx-auto d-block" alt="Slika art9" width="440px">
+            <br>
+            <div>
+                <p>The film sheds light on Marina Abramović's artistic process, detailing the preparation and execution
+                    of her performances. It explores the physical and emotional demands placed on the artist as she
+                    engaged in lengthy and challenging performances throughout her career.</p>
+            </div>
+            <br>
+            <div>
+                <p>It ended up receiving widespread acclaim, not only for its portrayal of Abramović's work but also for
+                    its ability to communicate the transformative power of art. The documentary captures the attention
+                    the exhibition received from both the art community and the general public.</p>
+            </div>
+            <br>
+            <div>
+                <p>The documentary contributes to Marina Abramović's legacy by documenting a pivotal moment in her
+                    career and providing a comprehensive overview of her impact on the art world. It has become an
+                    important resource for those interested in contemporary performance art.</p>
+            </div>
+            <br>
+            <img src="./art4.jpg" class="mx-auto d-block" alt="Slika art4" width="440px">
+            <div><br></br></div>
+            <div><br></br></div>
+
+
+            <div><br></br></div>
+            <div><br></br></div>
+        </div>
+        <!--Podnozje-->
+        <div class=" text-center text-white"
+            style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
+            <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 39/2021 Uroš Perić</p>
+        </div>
 </body>
+
 </html>

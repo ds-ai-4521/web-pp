@@ -1,74 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Marina Abramović</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./scroll.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Marina Abramović</title>
 </head>
+
 <body>
-    <!--navigacija-->
-    <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
-        
-        <br>
-        <a href="./index.html"><img src="./eyelogo.png" class="float-left" alt="Slika2" width="10px"></a>
-        <br><!--logo-->
+  <!--navigacija-->
+  <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
 
-        <!--secondary logo-tema sajta -->
-        <a class="navbar-brand col-md-9" href="/index.html"><b>Marina Abramović</b></a>
+    <br>
+    <a href="./index.html"><img src="./eyelogo.png" class="float-left" alt="Slika2" width="10px"></a>
+    <br><!--logo-->
 
-  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!--collapse navbar-collapse obezbeđuje dugme pod kojim se na klik prikazuje meni sa sadrzajem-->
-        <div class="collapse navbar-collapse" id="Test">
-            <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
-            <button class="dropbtn navbar"><a href="./index.html" class="active">Home</a></button>
-            <div class="dropdown" id="Test">
-                <button class="dropbtn navbar-nav" >First</button>
-                <div class="dropdown-content nav-item">
-                  <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
-                  <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
-                  <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
-                </div>
-            </div>
-            <div class="dropdown" id="Test">
-                <button class="dropbtn navbar">Second</button>
-                <div class="dropdown-content nav-item">
-                  <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
-                  <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
-                  <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
-                </div>
-            </div>
-            <div class="dropdown" id="Test">
-                <button class="dropbtn navbar-nav">Third</button>
-                <div class="dropdown-content nav-item">
-                  <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
-                  <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
-                  <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
-                </div>
-            </div>
+    <!--secondary logo-tema sajta -->
+    <a class="navbar-brand col-md-9" href="/index.html"><b>Marina Abramović</b></a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--collapse navbar-collapse obezbeđuje dugme pod kojim se na klik prikazuje meni sa sadrzajem-->
+    <div class="collapse navbar-collapse" id="Test">
+      <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
+      <button class="dropbtn navbar"><a href="./index.html" class="active">Home</a></button>
+      <div class="dropdown" id="Test">
+        <button class="dropbtn navbar-nav">First</button>
+        <div class="dropdown-content nav-item">
+          <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
+          <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
+          <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
         </div>
-        
-    </nav>
+      </div>
+      <div class="dropdown" id="Test">
+        <button class="dropbtn navbar">Second</button>
+        <div class="dropdown-content nav-item">
+          <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
+          <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
+          <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
+        </div>
+      </div>
+      <div class="dropdown" id="Test">
+        <button class="dropbtn navbar-nav">Third</button>
+        <div class="dropdown-content nav-item">
+          <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
+          <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
+          <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
+        </div>
+      </div>
+    </div>
 
-    <!--sadrzaj-->
-    <div style="background-color: rgb(18, 20, 22);">
+  </nav>
+  <!--scroll bar-->
+  <div class="progress-barr" id="progressBar"></div>
+  <!--sadrzaj-->
+  <div style="background-color: rgb(18, 20, 22);">
 
 
 
-        <div><br></br></div>
-        <div><br></br></div>
+    <div><br></br></div>
+    <div><br></br></div>
+    <!--Hover galerija-->
+
+    <div style="background-color: rgb(18, 20, 22); margin-bottom: 0px;">
+      <div>
+
+        <div class="d-flex flex-row">
+          <div class="card mx-auto" style="width:400px">
+            <img class="card-img-top" src="./balk1.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">I</h4>
+              <p class="card-text">"When the war start in Bosnia, it was so difficult time for me. I was not there. I
+                was living since long time outside of the country. And I remember so many artists immediately react and
+                make the work and protests on the horrors of that war. And I remember that I could not do anything. It
+                was too close to me."</p>
+
+              <p>"I went to Belgrade, and I interview my mother, my father, and a man who catch rats for 35 years of his
+                life."</p>
+              <a target="_blank" href="./balk1.webp" class="btn btn-primary"
+                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:400px">
+            <img class="card-img-top" src="./balk3.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">II</h4>
+              <p class="card-text">"There is a few things happening in this installation. It's positioned so the hands
+                of my father, my father with a pistol, my mother first showing empty hands and then with crossed hands
+                on her eyes. And then it's me first as a doctor, telling the story of the rat-catcher, and then as a
+                sexy dancer, dancing to the Hungarian Czardas. And in the meantime there's a huge pile of bones, which
+                during the entire performance I'm sitting and washing. It was summer in Venice, very, very hot and after
+                a few days already worms start coming out of the bones. And the smell was unbearable."</p>
+              <a target="_blank" href="./balk3.webp" class="btn btn-primary"
+                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:400px">
+            <img class="card-img-top" src="./balk2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">III</h4>
+              <p class="card-text">"The whole idea that by washing bones and trying to scrub the blood, is
+                impossible.You can't wash the blood from your hands as you can't wash the shame from the war. But also
+                it was important to transcend it, that can be used, this image, for any war, anywhere in the world. So
+                to become from personal there can be universal."</p>
+              <a target="_blank" href="./balk2.jpg" class="btn btn-primary"
+                style="background-color: rgb(18, 20, 22);">See Full Image</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center text-white"
+      style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 10px;">
+
+      <h1><b>Balkan Baroque</b></h1>
+      <p>1997.</p>
+    </div>
+    <div class="container text-center text-white "
+      style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px; width: 50%;">
+      <div></div>
+      <div>
+        <p>"Balkan Baroque" by Marina Abramović is a deeply introspective and emotionally charged performance that
+          delves into the artist's personal history and the complex socio-political landscape of the Balkans.</p>
+      </div>
+      <div></div>
+      <div>
+        <p>The use of cow bones in it serves as a powerful symbol. Abramović chose the bones to represent both the
+          agricultural roots of the Balkans and the aftermath of the violent conflicts that plagued the region,
+          particularly during the breakup of Yugoslavia in the 1990s. The repetitive act of cleaning the bones becomes a
+          ritualistic and meditative process, reflecting the need for cleansing and reconciliation in the face of
+          historical trauma.
+        </p>
+      </div>
+      <br>
+      <img src="./balk4.jpg" class="mx-auto d-block" alt="Slika balk4" width="440px">
+      <br>
+      <div>
+        <p>As Abramović meticulously cleaned each bone, she recited stories and accounts from her own life, connecting
+          personal experiences with the broader cultural and political context. The inclusion of her autobiography adds
+          a layer of intimacy to the performance, inviting the audience to witness the artist's vulnerability and engage
+          with the complexities of identity, memory, and resilience.</p>
+      </div>
+      <br>
+      <img src="./balk5.jpg" class="mx-auto d-block" alt="Slika balk5" width="440px">
+      <br>
+      <div><br>The piece was performed daily for a total of four days, each session lasting several hours. Abramović's
+        endurance and commitment to the physically demanding task of cleaning each bone contributed to the visceral
+        impact of the performance. The extended duration allowed for a profound immersion into the work, amplifying the
+        emotional and psychological resonance for both the artist and the audience.</br></div>
+      <br>
+      <div>
+        <p>Audience members were an integral part of the performance. They were invited to witness Abramović's actions
+          up close, creating an intimate and participatory experience. The emotional weight of the stories shared,
+          combined with the physicality of the bone-cleaning process, had a profound impact on the viewers, eliciting a
+          range of emotions from empathy to discomfort.</p>
+      </div>
+      <br>
+      <div>
+        <p>It is considered one of Marina Abramović's seminal works, showcasing her ability to blend personal narrative
+          with broader social and political themes. The piece has left a lasting impact on the contemporary art scene,
+          prompting discussions about the role of performance art in addressing historical traumas and the ways in which
+          artists can navigate their own cultural and political identities.</p>
+      </div>
+      <br>
+      <img src="./balk6.jpg" class="mx-auto d-block" alt="Slika balk6" width="440px">
+      <br>
+      <div>
+        <p>While the live performances of "Balkan Baroque" were ephemeral, the piece has been documented through
+          photographs and video recordings. These archival materials contribute to the ongoing legacy of the work,
+          allowing audiences to engage with its themes and Abramović's powerful presence even after the original
+          performances have concluded.</p>
+      </div>
+      <br>
+      <div>
+        <p>"Balkan Baroque" stands as a testament to Marina Abramović's ability to use her body and personal experiences
+          as a canvas for exploring broader societal issues, leaving a lasting imprint on the history of performance
+          art.</p>
+      </div>
+      <br>
+      <div>
+        <p>The piece also shares a name with the 1999 documentary, which serves as a biographical look into Abramović's
+          life. The film composes the life aesthetic of a woman in her era, with a personal history strongly marked by
+          the Yugoslavia of Tito, everyday violence, the experience of physical and psychic limits.</p>
+      </div>
+      <br>
+      <img src="./balk7.jpg" class="mx-auto d-block" alt="Slika balk7" width="440px">
+      <div><br></br></div>
+      <div><br></br></div>
+
+
+      <div><br></br></div>
+      <div><br></br></div>
     </div>
     <!--Podnozje-->
-    <div class=" text-center text-white" style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
-        <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 35/2021 Uroš Perić</p>
+    <div class=" text-center text-white"
+      style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
+      <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 39/2021 Uroš Perić</p>
     </div>
 </body>
+
 </html>
