@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .alert {
+              padding: 20px;
+              background-color: #f44336;
+              color: white;
+              opacity: 1;
+              transition: opacity 0.6s;
+              margin-bottom: 15px;
+            }
+            
+            .alert.success {background-color: #04AA6D;}
+            .alert.info {background-color: #2196F3;}
+            .alert.warning {background-color: #ff9800;}
+            
+            .closebtn {
+              margin-left: 15px;
+              color: white;
+              font-weight: bold;
+              float: right;
+              font-size: 22px;
+              line-height: 20px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+            
+            .closebtn:hover {
+              color: black;
+            }
+            </style>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./scroll.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -11,6 +42,31 @@
     <title>Marina Abramović</title>
 </head>
 <body>
+
+    
+
+    <div style="background-color: rgb(18, 20, 22);">
+        <div><br></br></div>
+        <div><br></br></div>
+
+
+        <div class="alert warning">
+            <span class="closebtn">&times;</span>  
+            <strong>Warning!</strong> Pictures including nudity ahead!
+          </div>
+          <script>
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+            
+            for (i = 0; i < close.length; i++) {
+              close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function(){ div.style.display = "none"; }, 600);
+              }
+            }
+            </script>
+
     <!--navigacija-->
     <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
         
@@ -58,17 +114,138 @@
         
     </nav>
 
+    
+
+
+    <!--scroll bar-->
+    <div class="progress-barr" id="progressBar"></div>
     <!--sadrzaj-->
-    <div style="background-color: rgb(18, 20, 22);">
+
+    
+
+    
 
 
+        <!--Hover galerija-->
+        <div>
+            <div class="col-md-6 container  text-white ">
+                
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./im1.jpg">
+                            <img src="./im1.jpg" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc">I</div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./im2.jpg">
+                            <img src="./im2.jpg" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc">II</div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./im3.jpg">
+                            <img src="./im3.jpg" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc">III</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div  style="background-color: rgb(18, 20, 22); margin-bottom: 0;">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="jumbotron text-center text-white" style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 200px;">
+            <h1><b>Imponderabilia </b></h1>
+            <p>1977.</p>
+        </div>
+        <div class="container text-center text-white " style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px; width: 50%;">
+            <div></div>
+            <div><p>In their 1977 performance, Imponderabilia, Abramović and Ulay stood as human doorposts on either side of the narrow entrance 
+                to the Galleria Communale d’Arte Moderna, in Bologna, Italy. 
+                The narrowness of the space forced visitors to squeeze sideways between them, 
+                forced to choose whether to face the naked Ulay or naked Abramović in order to enter the museum. 
+                Upon viewing the filmed footage from this performance, one notes that what stands out the most in this piece is not the 
+                vulnerability of the two naked artists, but rather the vulnerability and uncertainty of the visitors. 
+                Each person, upon reaching the entrance, was forced to decide first, whether they would enter the museum, and next, 
+                whether they would face the naked Abramović or the naked Ulay. By placing these decisions in the hands of the viewer, 
+                Imponderabilia becomes a performance of reflection on the subsequent reactions and interactions of the spectators. 
+                This piece also reflects Abramović and Ulay’s shared interest in duration, as the piece was performed in shifts, 
+                repeated throughout the exhibition, for a total of 700 hours.</p></div>
+            <div></div>
+            <div><p>We are standing naked in the main entrance of the museum, facing each other. 
+                In 1976 Abramović met Ulay, and over the next decade they collaborated in a series of relational performances during which 
+                they referred to themselves as a collective, androgynous being called “Ulay-Abramović.” 
+                In these works Abramović and Ulay questioned the socially defined identities of both femininity and masculinity, 
+                while also continuing to test their limits. These performances by Abramović and Ulay were not meant to be pleasing spectacles, 
+                but rather to disturb the viewer from a role of passivity.The public entering the Museum has to pass sideways through the small 
+                space between us. 
+
+
+                Each person passing has to choose which one of us to face', 
+                says Abramovic at the start of the compilation version of the performance registration. 
+                The artists' bodies together form the entrance to the Galleria Communale d'Arte Moderna in Bologna, Italy, 
+                which visitors must pass if they wish to gain access to the museum. When the visitors become aware that physical 
+                contact with the naked Abramovic and Ulay is inevitable and they will have to make a choice between the woman and the man, 
+                they at least try to avoid eye contact. Once the visitors are inside the museum, they realized that they had beenfilmed by 
+                a hidden camera. Moreover, they were confronted with a text on the wall: 'Imponderable. 
+                Such imponderable human factors as one's aesthetic sensitivity / the overriding importance of imponderables in determining 
+                human conduct.' The text refers directly to the visitor's behaviour on entry. Indeed, what this performance actually revolves 
+                around is the reaction provoked in the visitors when they enter the gallery. After 90 minutes, the police put an end to this 
+                controversial performance, which had actually been intended to last for three hours..
+            </p></div>
+            <br>
+            <img src="./im4.jpg" class="mx-auto d-block" alt="Slika im4" width="440px">
+            <br>
+            <div><p>In a selected space
+                    Naked we stand opposite each other in the museum entrance. 
+                    The public entering the museum has to turn sideways to move through the limited space between us. 
+                    Everyone wanting to get past has to choose one of us. </p>
+            </div>
+            <br>
+            <img src="./im5.jpg" class="mx-auto d-block" alt="Slika im5" width="440px">
+            <br>
+            
+            <div><br>Imponderabilia surveys the symbiotic dynamic between male and female. 
+                Created in collaboration with Ulay, the performance serves as a form of disturbance for the viewer 
+                from the role of a passive spectator. In this relational piece, Abramović and Ulay challenge the socially defined identities 
+                of both femininity and masculinity, while also continuing to test their physiological limits. Spectators at the Galleria Communale
+                d'Arte Moderna were forced to squeeze through the two artists’ naked bodies that flanked the entrance to the exhibition, and choose
+                whether they wanted to face the male or female body. Although nudity is common throughout many of Abramovic’s performances, 
+                Imponderabilia presents the audience with a deviation of personas, provoking a public reaction riddled with uneasiness and hesitancy.
+                Remarkably, the subjection of the two naked artists is overshadowed by the vulnerability and uncertainty of the spectators. 
+                The characteristic of vulnerability that normally accompanies the persona of a nude figure has been transferred completely to the 
+                clothed audience members passing between Abramovic and Ulay. Imponderabilia therefore becomes a reflection on the subsequent reactions
+                and interactions of the audience, which is fundamental to the rationale of the performance.</br></div>
+            <div><br></br></div>
+            <img src="./im6.webp" class="mx-auto d-block" alt="Slika im6" width="700px">
+            <div><br></br></div>
+            <div><br>Artsy explored the historical significance of "Imponderabilia" within the context of Abramović's career. 
+                The review highlighted the piece as a symbol of the artist's dedication to exploring the relationship between the performer 
+                and the audience.
+
+                It's important to note that opinions on Abramović's work, including "Imponderabilia," can vary widely, 
+                with some praising the provocative nature of her performances, while others may find them challenging or controversial. 
+                Overall, the piece is recognized as a seminal work that has left a lasting impact on the field of performance art. </i></br></div>
+            <div><br></br></div>
+            <div><br></br></div>
 
         <div><br></br></div>
         <div><br></br></div>
+
+
+
+        
     </div>
     <!--Podnozje-->
     <div class=" text-center text-white" style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
-        <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 35/2021 Uroš Perić</p>
+        <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 39/2021 Uroš Perić</p>
     </div>
 </body>
 </html>
