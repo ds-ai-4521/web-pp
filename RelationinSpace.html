@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./scroll.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Marina Abramović</title>
 </head>
+
 <body>
+
+
     <!--navigacija-->
     <nav class="navbar bg-  navbar-dark navbar-expand-sm fixed-top">
-        
+
         <br>
         <a href="./index.html"><img src="./eyelogo.png" class="float-left" alt="Slika2" width="10px"></a>
         <br><!--logo-->
@@ -21,54 +26,148 @@
         <!--secondary logo-tema sajta -->
         <a class="navbar-brand col-md-9" href="/index.html"><b>Marina Abramović</b></a>
 
-  
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <!--collapse navbar-collapse obezbeđuje dugme pod kojim se na klik prikazuje meni sa sadrzajem-->
         <div class="collapse navbar-collapse" id="Test">
             <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
             <button class="dropbtn navbar"><a href="./index.html" class="active">Home</a></button>
             <div class="dropdown" id="Test">
-                <button class="dropbtn navbar-nav" >First</button>
+                <button class="dropbtn navbar-nav">First</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
-                  <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
-                  <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
+                    <a href="./Rhythm0.html" class="nav-link" class="active">Rhythm 0</a>
+                    <a href="./Rhythm5.html" class="nav-link">Rhythm 5</a>
+                    <a href="./Rhythm10.html" class="nav-link">Rhythm 10</a>
                 </div>
             </div>
             <div class="dropdown" id="Test">
                 <button class="dropbtn navbar">Second</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
-                  <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
-                  <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
+                    <a href="./Imponderabilia.html" class="nav-link">Imponderabilia</a>
+                    <a href="./RelationinSpace.html" class="nav-link">Relation in Space</a>
+                    <a href="./InterruptioninSpace.html" class="nav-link">Interruption in Space</a>
                 </div>
             </div>
             <div class="dropdown" id="Test">
                 <button class="dropbtn navbar-nav">Third</button>
                 <div class="dropdown-content nav-item">
-                  <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
-                  <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
-                  <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
+                    <a href="./BalkanBaroque.html" class="nav-link"><br>Balkan</br> Baroque</a>
+                    <a href="./theArtistisPresent.html" class="nav-link">The Artist is Present</a>
+                    <a href="./shoesforDeparture.html" class="nav-link">Shoes for Derparture</a>
                 </div>
             </div>
         </div>
-        
-    </nav>
 
+    </nav>
+    <!--scroll bar-->
+    <div class="progress-barr" id="progressBar"></div>
     <!--sadrzaj-->
     <div style="background-color: rgb(18, 20, 22);">
 
-
-
         <div><br></br></div>
         <div><br></br></div>
-    </div>
-    <!--Podnozje-->
-    <div class=" text-center text-white" style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
-        <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 35/2021 Uroš Perić</p>
-    </div>
+        <!--Hover galerija-->
+        <div>
+            <div class="col-md-6 container  text-white ">
+
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./ris1.webp">
+                            <img src="./ris1.webp" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc"><I>I</I></div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./ris2.webp">
+                            <img src="./ris2.webp" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc">II</div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="slikaGalery">
+                        <a target="_blank" href="./ris3.jpg">
+                            <img src="./ris3.jpg" alt="Nema slike!" width="600" height="1000">
+                        </a>
+                        <div class="desc">III</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(18, 20, 22); margin-bottom: 0;">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="jumbotron text-center text-white"
+            style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 200px;">
+            <h1><b>Relation in space</b></h1>
+            <p>1976.</p>
+        </div>
+        <div class="container text-center text-white "
+            style="background-color: rgb(18, 20, 22); margin-bottom: 0px;margin-top: 0px; width: 50%;">
+            <div></div>
+            <div>
+                <p>"Relation in Space" is a performance art piece created by Marina Abramović in 1976. In this work,
+                    Abramović explored the dynamics of interpersonal relationships and the physical boundaries that
+                    define them. The performance involved two performers, typically Abramović herself and her
+                    collaborator and former partner, Ulay (Uwe Laysiepen).</p>
+            </div>
+            <div></div>
+            <div>
+                <p>In "Relation in Space," Abramović and Ulay stood on opposite sides of a room, using their bodies and
+                    movement to interact without physically touching. The space between them became a charged field of
+                    energy, and their actions and reactions created a unique and intense atmosphere. The performance
+                    delved into themes of connection, separation, and the emotional and psychological impact of
+                    proximity and distance.
+
+                </p>
+            </div>
+            <br>
+            <img src="./ris4.png" class="mx-auto d-block" alt="Slika ris4" width="440px">
+            <br>
+            <div>
+                <p>The piece is part of Abramović and Ulay's collaborative body of work that often centered around the
+                    exploration of the self, relationships, and the limits of the body and mind. Their performances were
+                    known for their durational nature, pushing the boundaries of endurance and challenging conventional
+                    notions of art and human connection. </p>
+            </div>
+            <br>
+            <img src="./ris5.jpg" class="mx-auto d-block" alt="Slika ris5" width="440px">
+            <br>
+
+            <div><br>"Relation in Space" is significant in the context of Abramović's career as it exemplifies her
+                interest in using the body as a medium to investigate fundamental aspects of human experience and
+                relationships. The work also reflects the broader conceptual and performative trends in the art world
+                during the 1970s.</br></div>
+            <div><br></br></div>
+            <img src="./ris6.jpg" class="mx-auto d-block" alt="Slika ris6 width=" 240px">
+            <div><br></br></div>
+            <div><br>"Relation in Space" is notable for its simplicity and directness. The piece, like many of
+                Abramović's works, involves a deep exploration of the relationship between the performers and the
+                audience. The use of space, both physical and emotional, is a key element. The performers, separated yet
+                connected, engage in a silent and often intense exchange that transcends verbal communication.
+
+                "Relation in Space" remains a significant work in the broader context of performance art history,
+                showcasing Abramović's ability to use the body as a powerful tool for artistic expression and
+                interpersonal exploration.. </i></br></div>
+            <div><br></br></div>
+            <div><br></br></div>
+
+            <div><br></br></div>
+            <div><br></br></div>
+
+        </div>
+        <!--Podnozje-->
+        <div class=" text-center text-white"
+            style="background-color: rgb(73, 78, 84); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px;">
+            <p>Autori: AI 47/2021 Milica Kekić, AI 45/2021 Danijel Stoilković, AI 39/2021 Uroš Perić</p>
+        </div>
 </body>
+
 </html>
