@@ -192,3 +192,13 @@ div.desc {
   text-align: center;
   color:rgb(208, 199, 199);
 }
+
+.desc a {
+  color:rgb(208, 199, 199);
+}
+
+.desc a:hover {
+  color:rgb(138, 137, 137);
+  text-decoration: none;
+  transition: 0.3s;
+}
